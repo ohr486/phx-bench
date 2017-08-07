@@ -1,6 +1,17 @@
+# for ex
 /_build
 /cover
 /deps
 erl_crash.dump
 *.ez
 *.beam
+
+# for ansible
+ansible/hosts
+ansible/*.retry
+
+# for etc
+.DS_Store
+*.swp
+*~
+
