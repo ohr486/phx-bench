@@ -10,6 +10,9 @@ erl_crash.dump
 ansible/hosts
 ansible/*.retry
 
+# for tsung
+tsung/logs/*
+
 # for etc
 .DS_Store
 *.swp
