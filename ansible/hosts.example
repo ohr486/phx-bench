@@ -1,0 +1,7 @@
+[tsung]
+SERVER_IP
+
+[all:vars]
+ansible_ssh_user=USER_ID
+ansible_ssh_private_key_file=PATH_TO_KEY
+ansible_ssh_port=YOUR_PORT
