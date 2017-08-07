@@ -1,0 +1,44 @@
+- name: install kerl
+  get_url:
+    url: https://raw.githubusercontent.com/kerl/kerl/master/kerl
+    dest: /bin/kerl
+
+- name: chmod kerl
+  shell: chmod 755 /bin/kerl
+
+- name: create kerl dir
+  file: path=/usr/local/kerl state=directory mode=0755
+
+- name: create installation dir
+  file: path=/usr/local/kerl/erlang state=directory mode=0755
+
+- name: update releases
+  shell: kerl update releases
+
+- name: regist newest erlang version
+  shell: kerl list releases | head -1 | awk '{print $NF}'
+  register: newest_erlang_version
+
+- name: check local erlang builds
+  stat: path='~/.kerl/builds/{{ newest_erlang_version.stdout }}'
+  register: check_erlang_build
+
+- name: check local erlang installs
+  stat: path='/usr/local/kerl/erlang/{{ newest_erlang_version.stdout }}'
+  register: check_erlang_install
+
+- name: build latest erlang
+  shell: kerl build {{ newest_erlang_version.stdout }} {{ newest_erlang_version.stdout }}
+  when: not check_erlang_build.stat.exists
+
+- name: install latest erlang
+  shell: kerl install {{ newest_erlang_version.stdout }} /usr/local/kerl/erlang/{{ newest_erlang_version.stdout }}
+  when: not check_erlang_install.stat.exists
+
+- name: put activate erlang file
+  copy: >
+    src=files/kerl.sh
+    dest=/etc/profile.d/kerl.sh
+    mode=0644
+    owner=root
+    group=root

@@ -1,0 +1,9 @@
+- name: install libs for build
+  yum: name={{ item }} state=present
+  with_items:
+    - ncurses-devel
+    - openssl-devel
+    - gcc-c++
+    - unixODBC-devel
+    - fop
+    - java-1.8.0-openjdk-devel

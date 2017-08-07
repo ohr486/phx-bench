@@ -1,0 +1,14 @@
+- name: add /usr/local/bin path
+  shell: export PATH=$PATH:/usr/local/bin
+
+- name: create src dir
+  file: path=/usr/local/src state=directory mode=0755
+
+- name: clone elixir repo
+  git: repo='https://github.com/elixir-lang/elixir.git' dest='/usr/local/src/elixir'
+
+- name: compile and install target version elixir
+  shell: 'source /etc/profile.d/kerl.sh && git checkout refs/tags/v1.5.1 && make clean && make && make install'
+  args:
+    chdir: "/usr/local/src/elixir"
+    executable: /bin/bash

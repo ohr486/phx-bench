@@ -1,5 +1,8 @@
 [tsung]
-SERVER_IP
+TSUNG_SERVER_IP
+
+[phx]
+PHOEINX_SERVER_IP
 
 [all:vars]
 ansible_ssh_user=USER_ID
