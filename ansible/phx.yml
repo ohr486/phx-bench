@@ -5,3 +5,5 @@
     - libs
     - erlang
     - elixir
+    - phx
+    - tuning
