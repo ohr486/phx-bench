@@ -9,6 +9,8 @@ erl_crash.dump
 # for ansible
 ansible/hosts
 ansible/*.retry
+ansible/roles/network/files/ssh_id_rsa
+ansible/roles/network/files/ssh_authorized_keys
 
 # for tsung
 tsung/logs/*
