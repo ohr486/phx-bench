@@ -1,0 +1,132 @@
+Host localhost
+  Port 10022
+  HostName localhost
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung0
+  Port 10022
+  HostName tsung0
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung1
+  Port 10022
+  HostName tsung1
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung2
+  Port 10022
+  HostName tsung2
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung3
+  Port 10022
+  HostName tsung3
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung4
+  Port 10022
+  HostName tsung4
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung5
+  Port 10022
+  HostName tsung5
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung6
+  Port 10022
+  HostName tsung6
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung7
+  Port 10022
+  HostName tsung7
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung8
+  Port 10022
+  HostName tsung8
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung9
+  Port 10022
+  HostName tsung9
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung10
+  Port 10022
+  HostName tsung10
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung11
+  Port 10022
+  HostName tsung11
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung12
+  Port 10022
+  HostName tsung12
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung13
+  Port 10022
+  HostName tsung13
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung14
+  Port 10022
+  HostName tsung14
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung15
+  Port 10022
+  HostName tsung15
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung16
+  Port 10022
+  HostName tsung16
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung17
+  Port 10022
+  HostName tsung17
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung18
+  Port 10022
+  HostName tsung18
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung19
+  Port 10022
+  HostName tsung19
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+
+Host tsung20
+  Port 10022
+  HostName tsung20
+  IdentityFile ~/.ssh/id_rsa
+  StrictHostKeyChecking no
+

@@ -1,0 +1,63 @@
+- name: create user dir
+  file: >
+    path=/home/YOUR_ID
+    owner=YOUR_ID
+    group=YOUR_GROUP
+    mode=0755
+
+- name: copy erlang cookie file
+  copy: >
+    src=files/erlang_cookie
+    dest=/home/YOUR_ID/.erlang.cookie
+    owner=YOUR_ID
+    group=YOUR_GROUP
+    mode=0400
+
+- name: create ssh dir
+  file: path=/home/YOUR_ID/.ssh state=directory mode=0755
+
+- name: copy ssh config
+  copy: >
+    src=files/ssh_config
+    dest=/home/YOUR_ID/.ssh/config
+    owner=YOUR_ID
+    group=YOUR_GROUP
+    mode=0644
+
+- name: copy ssh rsa
+  copy: >
+    src=files/ssh_id_rsa
+    dest=/home/YOUR_ID/.ssh/id_rsa
+    owner=YOUR_ID
+    group=YOUR_GROUP
+    mode=0600
+
+- name: copy auth file
+  copy: >
+    src=files/ssh_authorized_keys
+    dest=/home/YOUR_ID/.ssh/authorized_keys
+    owner=YOUR_ID
+    group=YOUR_GROUP
+    mode=0600
+
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung0'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung1'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung2'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung3'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung4'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung5'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung6'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung7'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung8'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung9'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung10'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung11'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung12'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung13'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung14'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung15'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung16'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung17'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung18'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung19'
+- lineinfile: dest=/etc/hosts line='xxx.xxx.xxx.xxx tsung20'
