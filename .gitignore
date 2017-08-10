@@ -15,6 +15,10 @@ ansible/roles/network/files/ssh_authorized_keys
 # for tsung
 tsung/logs/*
 
+# for demo
+demo/node_modules
+demo/dist
+
 # for etc
 .DS_Store
 *.swp
