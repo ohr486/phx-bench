@@ -1,2 +1,50 @@
 - name: install tsung
   yum: name=tsung state=present
+
+- name: create work dir
+  file: >
+    path=/var/www/tsung
+    state=directory
+    owner=root
+    group=root
+    mode=0755
+
+- name: create logs dir
+  file: >
+    path=/var/www/tsung/logs
+    state=directory
+    owner=YOUR_ID
+    group=YOUR_GROUP
+    mode=0755
+
+- name: create datas dir
+  file: >
+    path=/var/www/tsung/datas
+    state=directory
+    owner=root
+    group=root
+    mode=0755
+
+- name: copy conf
+  copy: >
+    src=files/phx.xml
+    dest=/var/www/tsung/phx.xml
+    owner=YOUR_ID
+    group=YOUR_GROUP
+    mode=0644
+
+- name: copy run.sh
+  copy: >
+    src=files/run.sh
+    dest=/var/www/tsung/run.sh
+    owner=YOUR_ID
+    group=YOUR_GROUP
+    mode=0755
+
+- name: copy rpt.sh
+  copy: >
+    src=files/rpt.sh
+    dest=/var/www/tsung/rpt.sh
+    owner=YOUR_ID
+    group=YOUR_GROUP
+    mode=0755
